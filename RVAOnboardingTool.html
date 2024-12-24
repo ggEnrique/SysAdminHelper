@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVA Onboarding Tool</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/shared.js" defer></script>
+    <script src="text/text.js" defer></script>
+    <script src="scripts/rva-script.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <p><a href="index.html">Back to Home</a></p>
+        <h1>RVA Onboarding Email Generator</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="usernameEmail">Username for Email:</label>
+            <input type="text" id="usernameEmail" name="usernameEmail" required>
+            
+            <label for="usernameRDS">Username for RDS:</label>
+            <input type="text" id="usernameRDS" name="usernameRDS" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="link">Password Link:</label>
+            <input type="url" id="link" name="link" required>
+            
+            <button type="button" onclick="generateEmail()">Generate Email</button>
+        </form>
+
+        <div class="output">
+            <label for="emailOutput">Generated Email:</label>
+            <textarea id="emailOutput" readonly></textarea>
+            <button id="copyBtn">Copy Email</button>
+        </div>
+
+        <div class="notes-section">
+            <h2>Ticket Notes</h2>
+            <textarea id="ticketNotes"></textarea>
+            <button id="copyNotesBtn">Copy Notes</button>
+            <button id="resetNotesBtn">Reset Notes</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 5%;
+  /* Adds space between the content and the edge of the browser */
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  /* Ensures padding is included in width/height calculations */
+}
+
+/* Center the Content */
+#app {
+  max-width: 500px;
+  margin: 0 auto;
+  /* Centers content horizontally */
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+button:active {
+  background-color: #004080;
+}
+
+/* Simple Responsive Design */
+@media (max-width: 600px) {
+  #app {
+    margin: 0;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+}
+
+#copyBtn {
+  padding: 10px 15px;
+  font-size: 1em;
+  background-color: #28a745;
+  /* Green color for differentiation */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#copyBtn:hover {
+  background-color: #218838;
+}
+
+#copyBtn:active {
+  background-color: #1e7e34;
+}
+
+textarea {
+  resize: vertical;
+  /* Allow only vertical resizing */
+  overflow: hidden;
+  /* Prevent scrollbar until resizing is needed */
+}
+
+.notes-section,
+.checklist {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+textarea#ticketNotes {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+.checklist label {
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.output{
+  margin-top: 20px;
+}
